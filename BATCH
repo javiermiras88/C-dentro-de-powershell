@@ -1,0 +1,107 @@
+@echo off
+echo hola mundo
+pause                                <-----pausamos la pantalla y al ejcucion del script
+exit                    
+
+##############COMANDOS##############
+
+cd
+
+copy /f "c:\archivo.txt" "c:\archivo2.txt"                 <----copiamos archivo en archivo2
+
+def /f "c:\archivo.txt"                                    <----elimina archvo de manera forzada
+
+move "c:\archivo.txt" "c:\Users\archivo2.txt"              <----movemos archivo a la carpeta indicada
+
+
+cls                                                        <----borrado
+
+
+echo priemera linea > fichero.txt                          <---- crea un fichero con la primera linea 
+echo segunda linea >> fichero.txt                          <---- crea un fichero con la segunda linea inserta lineasarriba
+
+
+color/?                                                    <---- vemos todos los colores
+
+color ab                                                   <----ponemos el color
+
+taskkill /f /im spotify.exe                                <----matar un proceso
+
+
+start explorer.exe                                         <-----abrimos un proceso
+
+
+########DECLARAMOS VARIABLES#################
+
+set javi = 35                         <-----creamos variable
+
+%javi%                                <-----llamamos
+
+set /p javi = escribimos en pantalla el nombre con el valor de la variable
+
+
+#######OPERACIONES##########################
+
+set num1
+set num2
+set /a suma = %num1% + %num2%          <-----con esto sumamos la variables
+
+echo %suma%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
