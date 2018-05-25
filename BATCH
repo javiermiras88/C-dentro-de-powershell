@@ -30,6 +30,11 @@ taskkill /f /im spotify.exe                                <----matar un proceso
 
 start explorer.exe                                         <-----abrimos un proceso
 
+exit                                                       <-----sale del script
+
+
+md javi                                                 <-----crea un nuevo direcotrio en la ruta actual
+
 
 ########DECLARAMOS VARIABLES#################
 
@@ -47,6 +52,19 @@ set num2
 set /a suma = %num1% + %num2%          <-----con esto sumamos la variables
 
 echo %suma%
+
+
+######FUNCIONES GENERICAS###################
+
+echo %DATE%                             <-----muestra la fecha actual
+
+
+
+
+
+
+
+
 
 
 
