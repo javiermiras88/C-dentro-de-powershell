@@ -26,3 +26,28 @@ namespace javi
 "@
 
 [javi.start]::Main()
+
+
+
+//**************ENSAMBLADO Y OTRA FORMA DE ACERLO***************//
+
+
+$assembly = [Reflection.Assembly]::LoadFile("c:\path\file.dll")
+
+$CalcInstance = New-Object -TypeName Calc
+$CalcInstance.Add(20,30)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
