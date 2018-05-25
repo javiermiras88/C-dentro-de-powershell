@@ -9,16 +9,14 @@ cd
 
 copy /f "c:\archivo.txt" "c:\archivo2.txt"                 <----copiamos archivo en archivo2
 
-def /f "c:\archivo.txt"                                    <----elimina archvo de manera forzada
+del /f /q "c:\archivo.txt"                                <----elimina archivo de manera forzada sin pedir confirmacion
 
 move "c:\archivo.txt" "c:\Users\archivo2.txt"              <----movemos archivo a la carpeta indicada
 
 
 cls                                                        <----borrado
-
-
-echo priemera linea > fichero.txt                          <---- crea un fichero con la primera linea 
-echo segunda linea >> fichero.txt                          <---- crea un fichero con la segunda linea inserta lineasarriba
+           
+echo "segunda linea ">> fichero.txt                        <---- vuelca "segunda linea" en el fichero.txt
 
 
 color/?                                                    <---- vemos todos los colores
@@ -57,6 +55,145 @@ echo %suma%
 ######FUNCIONES GENERICAS###################
 
 echo %DATE%                             <-----muestra la fecha actual
+
+
+
+#####COMANDOS###############################
+
+shutdown -s         <--apaga el equipo
+shutdown -r         <--reinicia el equipo
+shutdown -a         <--evitamos que el sistema se apage quita todo lo anterior
+shutdown -f         <--cierra todas las aplicaciones
+shutdown -c         <--comentario ala hora de cerrar
+shutdown -t 100     <--tiempo en segundos que espera antes de que se cierre
+
+AT 14:24 C:\user\lot.bat         <---ejecuta un .bat a esa hora
+
+
+rd                   <--borra un directorio
+
+rename  archivo1.txt archivo2.txt     <--cambiamos el nombre del archivo
+
+type archivo1.txt     <-- muestra por pantalla el contenido de un archivo
+
+
+ipconfig /all         <---muestra toda la información de configuración
+ipconfig /release     <---libera la ip del adaptador especificado
+ipconfig /renew       <---renueva la ip para el adaptador especificado
+ipconfig /flushdns    <---purga la caché de resolución de dns
+ipconfig /registerdns <---actualiza las conexiones dhcp y vuelve a registrar los nombres dns
+ipconfig /displaydns  <---muestra el contenido de la cache de resolución dns
+
+
+qbasic                 <---llamamos al lenguaje mas basico que existe
+
+call javi.bat         <---llamamos a otro archivo.bat
+
+find archivo.txt                 <---busca una cadena de texto en un archivo
+
+men                              <---muestra en pantalla la memoria
+
+msd                              <---informacion basica de la computadora
+
+
+
+############CONDICIONALES############
+
+-------if parecido a switch--------
+
+
+set /p ini = elija:
+
+if %ini%== 1 goto 1
+
+:1
+echo "as elegido 1"
+pause
+
+
+-------if------------------
+
+set javi = 1
+
+if %javi%==1 (goto :ver) else(goto :nover)
+
+:ver
+echo "es igual a uno"
+pause
+
+:nover
+echo "es distintinto a uno"
+pause
+
+
+
+#########BUCLE##############
+
+:bucle
+
+echo "2"
+
+goto bucle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
