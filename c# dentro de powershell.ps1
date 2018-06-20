@@ -34,8 +34,17 @@ namespace javi
 
 $assembly = [Reflection.Assembly]::LoadFile("c:\path\file.dll")
 
-$CalcInstance = New-Object -TypeName Calc
-$CalcInstance.Add(20,30)
+
+-----PRIMERA FORMA-------
+
+[javi.start]::Main()                              
+
+
+
+-----SEGUNDA FORMA-------
+
+$objeto = New-Object javi.start
+$objeto.Main()
 
 
 
